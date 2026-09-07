@@ -1,10 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   plugins: [react()],
-
-  // GitHub repository name:
-  // https://github.com/<your-username>/Online_CBT
-  base: "/Online_CBT/"
-});
+  base: command === "build" ? "/Online_CBT/" : "/",
+}));
