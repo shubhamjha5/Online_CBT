@@ -1089,7 +1089,7 @@ body {
 
 /* Bottom subtle watermark */
 body::after {
-  content: "Online mock CBT by Shubham Jha";
+  content: "Online mock by Shubham Jha";
   position: fixed;
   bottom: 18px;
   left: 50%;
@@ -1101,23 +1101,4 @@ body::after {
   z-index: 9999;
   letter-spacing: 0.6px;
   font-weight: 700;
-}
-
-/* Large diagonal watermark for desktop */
-@media (min-width: 900px) {
-  body::before {
-    content: "Shubham Jha — Online mock CBT";
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-30deg);
-    opacity: 0.06;
-    font-size: 68px;
-    color: #0b1220;
-    pointer-events: none;
-    z-index: 0;
-    font-weight: 800;
-    white-space: nowrap;
-    letter-spacing: 2px;
-  }
 }
